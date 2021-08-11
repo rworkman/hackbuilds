@@ -76,16 +76,6 @@ else
   LIBDIRSUFFIX=""
 fi
 
-# Use the installed greeter
-if [ -e /usr/sbin/lightdm-gtk-greeter ]; then
-  greeter="lightdm-gtk-greeter"
-elif [ -e /usr/sbin/slick-greeter ]; then
-  greeter="slick-greeter"
-else
-  echo "You must install a greeter before building"
-  exit 1
-fi
-
 set -e
 
 rm -rf $PKG
@@ -121,7 +111,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --disable-liblightdm-qt \
   --enable-liblightdm-qt5 \
   --disable-tests \
-  --with-greeter-session=${greeter} \
+  --with-greeter-session=lightdm-gtk-greeter \
   --with-greeter-user=lightdm
 
 make
