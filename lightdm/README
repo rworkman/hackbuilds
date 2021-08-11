@@ -12,5 +12,5 @@ Key features of LightDM are:
 
 
 You must have lightdm user and group:
-  groupadd -g 800 lightdm"
-  useradd -d /var/lib/lightdm -s /bin/false -u 800 -g 800 lightdm"
+  groupadd -g 800 lightdm
+  useradd -d /var/lib/lightdm -s /bin/false -u 800 -g 800 lightdm
