@@ -1,8 +1,5 @@
 LightDM is a cross-desktop display manager.
 
-IMPORTANT: ONE "greeter" installed is required before building. Currently
-lightdm-gtk-greeter and slick-greeter are supported.
-
 Key features of LightDM are:
 
 	* Cross-desktop - supports different desktop technologies.
