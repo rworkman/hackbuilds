@@ -1,0 +1,12 @@
+                   |-----handy-ruler------------------------------------------------------|
+lightdm-qt5-greeter: lightdm-qt5-greeter (LightDM Qt5 Greeter)
+lightdm-qt5-greeter:
+lightdm-qt5-greeter: lightdm-qt5-greeter is a simple frontend for the lightdm
+lightdm-qt5-greeter: displaymanager, written in c++ and qt5.
+lightdm-qt5-greeter:
+lightdm-qt5-greeter: Homepage: https://github.com/rezso/lightdm-qt5-greeter
+lightdm-qt5-greeter:
+lightdm-qt5-greeter:
+lightdm-qt5-greeter:
+lightdm-qt5-greeter:
+lightdm-qt5-greeter:
