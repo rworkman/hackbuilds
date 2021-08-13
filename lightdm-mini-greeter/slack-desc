@@ -1,0 +1,12 @@
+                    |-----handy-ruler------------------------------------------------------|
+lightdm-mini-greeter: lightdm-mini-greeter (Single-User LightDM Greeter)
+lightdm-mini-greeter:
+lightdm-mini-greeter: A minimal but highly configurable single-user GTK3 greeter for
+lightdm-mini-greeter: LightDM.
+lightdm-mini-greeter:
+lightdm-mini-greeter: Inspired by the SLiM Display Manager & LightDM GTK3 Greeter.
+lightdm-mini-greeter:
+lightdm-mini-greeter: Homepage: https://github.com/prikhi/lightdm-mini-greeter
+lightdm-mini-greeter:
+lightdm-mini-greeter:
+lightdm-mini-greeter:
