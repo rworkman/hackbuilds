@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# Lightdm session manager
-if [ -x /usr/bin/lightdm ]; then
-  exec /usr/bin/lightdm
-fi
