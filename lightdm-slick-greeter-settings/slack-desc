@@ -1,0 +1,12 @@
+                              |-----handy-ruler------------------------------------------------------|
+lightdm-slick-greeter-settings: lightdm-slick-greeter-settings (Configuration Tool for LightDM Display Manager)
+lightdm-slick-greeter-settings:
+lightdm-slick-greeter-settings: This tool currently lets users configure slick-greeter. Its scope can
+lightdm-slick-greeter-settings: (should/will?) be extended to configure the LightDM display manager
+lightdm-slick-greeter-settings: itself and to detect and configure other greeters such as
+lightdm-slick-greeter-settings: lightdm-gtk-greeter.
+lightdm-slick-greeter-settings:
+lightdm-slick-greeter-settings:
+lightdm-slick-greeter-settings:
+lightdm-slick-greeter-settings:
+lightdm-slick-greeter-settings:
