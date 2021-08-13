@@ -94,6 +94,10 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG
 
+# Supply a default conf file
+mkdir -p $PKG/etc/lightdm
+cp $CWD/files/slick-greeter.conf $PKG/etc/lightdm/slick-greeter.conf.new
+
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
