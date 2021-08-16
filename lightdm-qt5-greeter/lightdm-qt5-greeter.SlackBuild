@@ -87,7 +87,7 @@ cd build
   make install/strip DESTDIR=$PKG
 cd ..
 
-find $PKG -type f -name '*.la' -delete
+rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
 # Preserve conf file
 mv $PKG/etc/lightdm/lightdm-qt5-greeter.conf{,.new}
