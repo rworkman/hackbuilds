@@ -102,7 +102,7 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG
 
-find $PKG -type f -name '*.la' -delete
+rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
 # Preserve config file
 mv $PKG/etc/lightdm/lightdm-gtk-greeter.conf{,.new}
