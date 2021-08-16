@@ -116,7 +116,7 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG
 
-find $PKG -type f -name '*.la' -delete
+rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
 cat $CWD/files/Xsession > $PKG/etc/lightdm/Xsession
 chmod 755 $PKG/etc/lightdm/Xsession
