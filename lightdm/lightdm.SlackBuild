@@ -144,6 +144,12 @@ chown lightdm:lightdm $PKG/var/lib/lightdm
 mkdir -p $PKG/var/lib/lightdm-data
 chown lightdm:lightdm $PKG/var/lib/lightdm-data
 
+# Move dbus config to system location
+mkdir -p $PKG/usr/share/dbus-1/system.d
+mv $PKG/etc/dbus-1/system.d/org.freedesktop.DisplayManager.conf \
+   $PKG/usr/share/dbus-1/system.d
+rm -rf $PKG/etc/dbus-1
+
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
