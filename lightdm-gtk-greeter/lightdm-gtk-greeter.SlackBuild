@@ -100,7 +100,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --with-libxklavier
 
 make
-make install DESTDIR=$PKG
+make install docdir=/usr/doc/$PKGNAM-$VERSION DESTDIR=$PKG
 
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
@@ -114,11 +114,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS ChangeLog COPYING NEWS \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-
-# Move the sample config to proper directory
-cp $PKG/usr/share/doc/$PRGNAM/sample-lightdm-gtk-greeter.css \
-  $PKG/usr/doc/$PRGNAM-$VERSION
-rm -rf $PKG/usr/share/doc
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
